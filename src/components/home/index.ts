@@ -1,0 +1,5 @@
+export { default as Intro} from "./Intro"
+export { default as About} from "./About"
+export { default as ListedAttributes} from "./ListedAttributes"
+export { default as ActiveText} from "./ActiveText"
+export { default as StripesBackground} from "./StripesBackground"

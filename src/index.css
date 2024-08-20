@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-size: 16px;
+  letter-spacing: -0.9px;
+  list-style: none;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'NeueMontreal-Regular', 'Inter', sans-serif;
+
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  position: relative;
+  font-size: 16px;
+  letter-spacing: -0.9px;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #646cff;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+}
+
+
+@layer base {
+
+  @font-face {
+    font-family: 'NeueMontreal-Light';
+    font-style: normal;
+    src: url("./assets/fonts/NeueMontreal-Light.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'NeueMontreal-LightItalic';
+    font-style: italic;
+    src: url("./assets/fonts/NeueMontreal-LightItalic.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'NeueMontreal-Medium';
+    font-style: normal;
+    src: url("./assets/fonts/NeueMontreal-Medium.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'NeueMontreal-MediumItalic';
+    font-style: italic;
+    src: url("./assets/fonts/NeueMontreal-MediumItalic.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'NeueMontreal-Regular';
+    font-style: normal;
+    src: url("./assets/fonts/NeueMontreal-Regular.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'NeueMontreal-Italic';
+    font-style: italic;
+    src: url("./assets/fonts/NeueMontreal-Italic.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'NeueMontreal-Bold';
+    font-style: normal;
+    src: url("./assets/fonts/NeueMontreal-Bold.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'NeueMontreal-BoldItalic';
+    font-style: italic;
+    src: url("./assets/fonts/NeueMontreal-BoldItalic.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'Kristi-Regular';
+    font-style: italic;
+    src: url("./assets/fonts/Kristi-Regular.ttf") format("opentype");
+  }
+
+  .font-neue-light {
+    font-family: 'NeueMontreal-Light';
+  }
+
+  .font-neue-light-italic {
+    font-family: 'NeueMontreal-LightItalic';
+  }
+
+  .font-neue-medium {
+    font-family: 'NeueMontreal-Medium';
+  }
+
+  .font-neue-medium-italic {
+    font-family: 'NeueMontreal-MediumItalic';
+  }
+
+  .font-neue-regular {
+    font-family: 'NeueMontreal-Regular';
+  }
+
+  .font-neue-italic {
+    font-family: 'NeueMontreal-Italic';
+  }
+
+  .font-neue-bold {
+    font-family: 'NeueMontreal-Bold';
+  }
+
+  .font-neue-bold-italic {
+    font-family: 'NeueMontreal-BoldItalic';
+  }
+
+  .font-kristi {
+    font-family: 'Kristi-Regular';
+  }
+
+  .font-small {
+    font-size: clamp(1rem, 2.3vw, 1.7rem);
+  }
+
+  .font-medium {
+    font-size: clamp(2.5rem, 1.058rem + 5.769vw, 6.25rem);
+  }
+
+  .font-big {
+    font-size: clamp(40px, 5rem, 120px);
+  }
+
+  .text-cyan {
+    color: rgb(165 243 252);
+  }
+
+  .text-red {
+    color: rgb(220 38 38);
+  }
+
+  .text-pink {
+    color: rgb(249 168 212);
+  }
+
+  .text-green {
+    color: rgb(22 163 74);
+  }
+
+  .circle {
+    position: relative;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    border-radius: 9999px;
+    border-width: 1.5px;
+    --tw-border-opacity: 1;
+    border-color: #ffffff;
+    /* border-color: rgb(39 39 39 / var(--tw-border-opacity)); */
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    margin: 0 6px;
+    font-size: 22px;
+    line-height: .6;
+    --tw-text-opacity: 1;
+    color: #ffffff;
+    /* color: rgb(39 39 39 / var(--tw-text-opacity)); */
+  }
+
+  .circle-2 {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 9999px;
+    border-width: 1.8px;
+    --tw-border-opacity: 1;
+    border-color: #ffffff;
+    /* border-color: rgb(39 39 39 / var(--tw-border-opacity)); */
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    margin: 0 7px;
+    font-size: 22px;
+    line-height: .8;
+    --tw-text-opacity: 1;
+    color: #ffffff;
+    /* color: rgb(39 39 39 / var(--tw-text-opacity)); */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
