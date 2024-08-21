@@ -7,6 +7,7 @@ export default function ProjectCard({project}:  {project: ProjectDataType}) {
     <>
       <a
         href={repo}
+        target="_blank"
         className="w-full flex flex-col md:flex-row md:hover:bg-slate-200 transition-all z-0"
       >
         <div className="left md:w-1/2 flex flex-col justify-between text-black">
@@ -17,8 +18,8 @@ export default function ProjectCard({project}:  {project: ProjectDataType}) {
           <h2 className="uppercase flex justify-between items-center pt-4 md:pt-0 pl-4 pr-[22px] whitespace-nowrap pb- md:pb-4 lg:pb-10">
             <span className=" text-[2rem] md:text-4xl lg:text-[5.4rem]">{title}.</span>
             <span className="text-xs md:text-sm lg:text-lg leading-[1.2] flex flex-col gap-2 z-10">
-              <a href={url} className="block hover:text-red">LIVE DEMO</a>
-              <a href={repo} className="block hover:text-green">GITHUB</a>
+              <a href={url} target="_blank" className="block hover:text-red">LIVE DEMO</a>
+              <a href={repo} target="_blank" className="block hover:text-green">GITHUB</a>
             </span>
           </h2>
         </div>

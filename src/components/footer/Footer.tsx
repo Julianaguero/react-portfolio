@@ -1,7 +1,7 @@
 import { useSectionInView } from "../../lib/hooks";
 import { ContactLinks, FooterLinks, SocialLinks } from "../index";
 
-export default function Footer({customStyle} : {customStyle?: string}) {
+export default function Footer({ customStyle }: { customStyle?: string }) {
   const { ref } = useSectionInView("Contact", 0.5);
 
   return (
@@ -14,7 +14,6 @@ export default function Footer({customStyle} : {customStyle?: string}) {
         <ContactLinks />
         <SocialLinks />
       </div>
-   
       <FooterLinks />
     </footer>
   );

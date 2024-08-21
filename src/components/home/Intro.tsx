@@ -12,9 +12,19 @@ export default function Intro() {
       id="home"
     >
       <div
-        className="absolute bg-[#FF6363] h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full  sm:left-[45%] sm:top-[26%] left-[65%] top-[50%] lg:left-[48%] lg:top-[30%]"
+        className="overflow-hidden absolute bg-transparent h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full  sm:left-[45%] sm:top-[26%] left-[65%] top-[50%] lg:left-[48%] lg:top-[30%]"
         aria-hidden
-      ></div>
+      >
+        <motion.div
+        initial={{ opacity: 0.3, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          type: "tween",
+          duration: 0.5,
+        }}
+        className="z-10 bg-[#FF6363] h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full  sm:left-[45%] sm:top-[26%] left-[65%] top-[50%] lg:left-[48%] lg:top-[30%]"
+        ></motion.div>
+      </div>
       <div className="order-2">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
