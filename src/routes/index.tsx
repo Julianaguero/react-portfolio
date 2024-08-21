@@ -1,11 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import { Home } from "../pages";
-import Contact from "../pages/Contact";
-
+import { Home, Work, Contact, Resume } from "../pages";
 
 // const basename = process.env.NODE_ENV === "production" ? "/" : "/";
-
 
 export const router = createBrowserRouter([
     {
@@ -15,6 +12,14 @@ export const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />
+            } ,
+            {
+                path: "/work",
+                element: <Work />
+            } ,
+            {
+                path: "/resume",
+                element: <Resume />
             } ,
          
         ]

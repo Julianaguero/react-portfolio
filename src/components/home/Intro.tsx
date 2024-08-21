@@ -1,7 +1,6 @@
-import persImg from "../../assets/img/img_pers_back_1.png";
-// import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { useSectionInView } from "../../lib/hooks";
+import persImg from "../../assets/img/img_pers_back_1.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);

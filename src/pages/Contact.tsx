@@ -1,30 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FooterLinks, Header } from "../components";
-import { contactLinks } from "../lib/data";
+import { colors, contactLinks } from "../lib/data";
 import { useSectionInView } from "../lib/hooks";
-
-const colors = [
-  "#DBACFF",
-  "#DAE5E8",
-  "#008F64",
-  "#FFFFFF",
-  "#E24848",
-  "#FFBABA",
-  "#620FCB",
-  "#0047FF",
-  "#FFFFFF",
-  "#DAE5E8",
-  "#DBACFF",
-  "#E24848",
-  "#008F64",
-  "#7DCDFA",
-  "#620FCB",
-  "#DAE5E8",
-  "#DAF67C",
-  "#C49F55",
-  "#ADEBB2",
-  "#7E6EEE",
-];
 
 const ContactView = () => {
   const { scrollY } = useScroll();
@@ -38,7 +15,7 @@ const ContactView = () => {
   );
 
   return (
-    <div
+    <main
       ref={ref}
       id="contact"
       className="relative h-[2000vh] overflow-hidden scrollbar-hide"
@@ -89,7 +66,7 @@ const ContactView = () => {
           <FooterLinks />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

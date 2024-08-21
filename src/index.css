@@ -171,11 +171,14 @@ button:hover {
   }
 
   .font-kristi {
-    font-family: 'Kristi-Regular';
+    font-family: 'Kristi-Regular', 'Courier New', monospace;;
   }
 
   .font-small {
     font-size: clamp(1rem, 2.3vw, 1.7rem);
+  }
+  .font-small-variable {
+    font-size: clamp(1.2rem, 0.469rem + 1.4223vw, 2.3rem);
   }
 
   .font-medium {
@@ -198,9 +201,27 @@ button:hover {
     color: rgb(249 168 212);
   }
 
+  .text-magenta {
+    color: rgb(219 172 255);
+  }
+
   .text-green {
     color: rgb(22 163 74);
   }
+
+  .bg-green {
+    background-color: rgb(0 143 100);
+  }
+
+  .bg-dark {
+    background-color: #1C1C1C;
+  }
+
+  .bg-magenta {
+    background-color: rgb(219 172 255);
+  }
+
+
 
   .circle {
     position: relative;

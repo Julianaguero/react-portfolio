@@ -17,7 +17,7 @@ export const links = [
   },
   {
     name: "Resume",
-    hash: "#resume",
+    hash: "/resume",
     active: "text-pink-300",
     hover: "hover:text-pink-300"
   },
@@ -31,34 +31,57 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full-Stack Developer bootcamp",
-    location: "Madrid, Spain",
-    description:
-      "I graduated after 6 months of studying ( 900+ hs coding).",
-    date: "2023",
+    title: "2024 - MR. CABEZA LAPIZ",
+    position: "React Developer.",
+    location: "/ Madrid - Spain",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Madrid, Spain",
-    description:
-      "Developed a Next.js application, consuming data from two different APIs, including integrated pagination, filtering, and search functionality.",
-    date: "2023 - 1 month",
+    title: "2022 - 2023 - ECC SL",
+    position: "Head Manager.",
+    location: "/ Madrid - Spain",
   },
   {
-    title: "Front-End Developer",
-    location: "Madrid, Spain",
-    description:
-      "I worked as a full-stack developer leading a 3-member team responsible for the design, and front-end development of an e-commerce. I developed and implemented the backend for products with a MySQL database, including controllers and routes.",
-    date: "2023 - 2 months",
+    title: "2019 - 2020 - DET VIDE HUS",
+    position: "Manager.",
+    location: "/ Copenhagen - Denmark",
+  },
+  {
+    title: "2013 - 2018 - GEA GRUPO SALUD",
+    position: "RR.HH.",
+    location: "/ Cordoba - Argentina",
   },
 ] as const;
+
+export const educationData = [
+  {
+    title: "REACT DEVELOPER.",
+    location: "MADRID, SPAIN",
+    site:
+      "UNIR - UNIVERSIDAD INTERNACIONAL DE LA RIOJA.",
+    date: "2024",
+  },
+  {
+    title: "BACHELOR OF PSYCOLOGY.",
+    location: "CORDOBA, ARGENTINA",
+    site:
+      "UNC - UNIVERSIDAD NACIONAL DE CORDOBA.",
+    date: "2016 - 2018",
+  },
+  {
+    title: "FULL-STACK DEVELOPER.",
+    location: "BSAS - ARGENTINA",
+    site:
+      "CODO A CODO 2.0.",
+    date: "2023",
+  },
+]
 
 export const projectsData = [
   {
     title: "RUN THE CODE",
     description:
       "I worked as a full-stack developer on this startup project for 2 months. A sneaker store e-commerce.",
-    tags: ["React", "Typescript", "TailwindCSS" ,"Node.js", "Express", "MongoDB"],
+    tags: ["React", "Typescript", "TailwindCSS", "Node.js", "Express", "MongoDB"],
     // imageUrl: runthecodeImg,
     url: "https://runthecode-ecommerce.onrender.com/"
   },
@@ -80,23 +103,6 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "MongoDB",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Framer Motion",
-] as const;
-
 export const contactLinks = [
   {
     name: "LINKEDIN",
@@ -115,3 +121,58 @@ export const contactLinks = [
     link: "mailto:julianaguero@gmail.com"
   },
 ] as const;
+
+export const colors = [
+  "#DBACFF",
+  "#DAE5E8",
+  "#008F64",
+  "#FFFFFF",
+  "#E24848",
+  "#FFBABA",
+  "#620FCB",
+  "#0047FF",
+  "#FFFFFF",
+  "#DAE5E8",
+  "#DBACFF",
+  "#E24848",
+  "#008F64",
+  "#7DCDFA",
+  "#620FCB",
+  "#DAE5E8",
+  "#DAF67C",
+  "#C49F55",
+  "#ADEBB2",
+  "#7E6EEE",
+];
+
+export const textToRender = [
+  { text: "I'VE", hover: "hover:text-white" },
+  { text: "WORK", hover: "hover:text-white" },
+  { text: "WITH", hover: "hover:text-white" },
+  { text: "REACT", hover: "hover:text-green" },
+  { text: "/", hover: "" },
+  { text: "NEXT.JS", hover: "hover:text-pink" },
+  { text: "/", hover: "" },
+  { text: "LIT", hover: "hover:text-cyan" },
+  { text: "ELEMENTS", hover: "hover:text-cyan" },
+  { text: "/", hover: "" },
+  { text: "WEB", hover: "hover:text-[#E24848]" },
+  { text: "COMPONENTS", hover: "hover:text-[#E24848]" },
+  { text: "/", hover: "" },
+  { text: "TYPESCRIPT", hover: "hover:text-[#620fcb]" },
+  { text: "/", hover: "" },
+  { text: "TAILWINDCSS", hover: "hover:text-blue-400" },
+  { text: "/", hover: "" },
+  { text: "SASS", hover: "hover:text-yellow-400" },
+  { text: "/", hover: "" },
+  { text: "NODE.JS", hover: "hover:text-fuchsia-600" },
+  { text: "/", hover: "" },
+  { text: "EXPRESS", hover: "hover:text-green" },
+  { text: "/", hover: "" },
+  { text: "MONGODB", hover: "hover:text-cyan" },
+  { text: "/", hover: "" },
+  { text: "FRAMER", hover: "hover:text-lime-500" },
+  { text: "MOTION", hover: "hover:text-lime-500" },
+  { text: "/", hover: "" },
+  { text: "GIT", hover: "hover:text-violet-600" }
+];

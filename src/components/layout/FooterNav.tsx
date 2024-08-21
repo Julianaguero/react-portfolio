@@ -6,7 +6,7 @@ export default function FooterNav() {
   const { activeSection, setActiveSection } = useActiveSectionContext();
 
   return (
-    <div className=" bg-[#1C1C1C] px-8 py-12 md:p-24 md:pl-10">
+    <div className="bg-dark px-8 py-12 md:p-24 md:pl-10">
       <ul>
         {links.slice(1).map((link, index) => (
           <li key={link.hash} className="flex items-start ">
