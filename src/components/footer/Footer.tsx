@@ -15,7 +15,7 @@ export default function Footer({customStyle} : {customStyle?: string}) {
         <div className="flex flex-col justify-center mb-20 ">
           <p className="font-small">or contact me on</p>
           <a
-            href="http://"
+            href=''
             className="font-medium hover:text-red leading-[0.9]"
             target="_blank"
           >

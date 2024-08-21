@@ -1,8 +1,6 @@
-
 import { motion } from "framer-motion";
 import { useState } from "react";
 import {ListedAttributes, ActiveText} from "../index";
-// import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
 const [isOpen, setIsOpen] = useState(false)

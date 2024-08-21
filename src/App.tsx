@@ -2,6 +2,8 @@ import { Outlet, useLocation } from "react-router-dom";
 import "./App.css";
 import { useEffect } from "react";
 import { Footer, Header } from "./components";
+import { MotionConfig } from "framer-motion";
+import isValidProp from "@emotion/is-prop-valid";
 
 function App() {
   const location = useLocation();
@@ -10,12 +12,14 @@ function App() {
       window.scrollTo(0, 0);
     }, 400);
   }, [location]);
- 
+
   return (
     <div className="w-full">
-      <Header />
-      <Outlet />
-      <Footer />
+      <MotionConfig isValidProp={isValidProp}>
+        <Header />
+        <Outlet />
+        <Footer />
+      </MotionConfig>
     </div>
   );
 }

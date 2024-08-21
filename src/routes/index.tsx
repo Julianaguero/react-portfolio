@@ -4,7 +4,7 @@ import { Home } from "../pages";
 import Contact from "../pages/Contact";
 
 
-const basename = process.env.NODE_ENV === "production" ? "/portfolio-react" : "/";
+// const basename = process.env.NODE_ENV === "production" ? "/" : "/";
 
 
 export const router = createBrowserRouter([
@@ -23,4 +23,6 @@ export const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />
     }
-], { basename });
+]
+// , { basename }
+);
