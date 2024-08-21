@@ -133,7 +133,9 @@ button:hover {
   @font-face {
     font-family: 'Kristi-Regular';
     font-style: italic;
-    src: url("./assets/fonts/Kristi-Regular.ttf") format("opentype");
+    src: url('./assets/fonts/Kristi-Regular.woff2') format('woff2'),
+      url('./assets/fonts/Kristi-Regular.woff') format('woff'),
+      url("./assets/fonts/Kristi-Regular.ttf") format("opentype");
   }
 
   .font-neue-light {
