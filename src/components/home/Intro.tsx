@@ -1,13 +1,10 @@
 import { motion } from "framer-motion";
-import { useSectionInView } from "../../lib/hooks";
 import persImg from "../../assets/img/img_pers_back_1.png";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
 
   return (
     <section
-      ref={ref}
       className="relative w-full overflow-hidden h-[100dvh] md:h-screen flex flex-col justify-end  md:grid md:grid-cols-[55%,45%] md:justify-between md:items-end pb-4 md:pl-6"
       id="home"
     >
