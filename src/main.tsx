@@ -4,11 +4,14 @@ import "./index.css";
 import { router } from "./routes/index.tsx";
 import { RouterProvider } from "react-router-dom";
 import ActiveSectionContextProvider from "./context/ActiveSectionContextProvider.tsx";
+import { HelmetProvider } from "react-helmet-async";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ActiveSectionContextProvider>
-      <RouterProvider router={router} />
-    </ActiveSectionContextProvider>
+    <HelmetProvider>
+      <ActiveSectionContextProvider>
+        <RouterProvider router={router} />
+      </ActiveSectionContextProvider>
+    </HelmetProvider>
   </StrictMode>
 );

@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'runthecode': "url('/src/assets/img/runthecode-mockup.jpg')",
+        'pomodoro': "url('/src/assets/img/pomodoro-mockup.jpg')",
+        'carhub': "url('/src/assets/img/carhub-mockup.jpg')",
+        'socialapp': "url('/src/assets/img/socialapp-mockup.png')",
+      }
+    },
   },
   plugins: [
     function ({addUtilities}) {

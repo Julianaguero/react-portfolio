@@ -1,6 +1,3 @@
-// import runthecodeImg from "@/public/home-page.png";
-// import carshowcaseImg from "@/public/carshowcase.jpg";
-// import socialappImg from "@/public/img_project_socialApp_full.jpg";
 
 export const links = [
   {
@@ -78,28 +75,41 @@ export const educationData = [
 
 export const projectsData = [
   {
-    title: "RUN THE CODE",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 months. A sneaker store e-commerce.",
-    tags: ["React", "Typescript", "TailwindCSS", "Node.js", "Express", "MongoDB"],
-    // imageUrl: runthecodeImg,
-    url: "https://runthecode-ecommerce.onrender.com/"
+    title: "Runthecode",
+    year: "2024",
+    type: "E-COMMERCE /",
+    stack: "STACK : React - Typescript -  TailwindCSS - Node.js - Express - MongoDB",
+    tailwindBg: "bg-runthecode",
+    url: "https://runthecode-ecommerce.onrender.com/",
+    repo: "https://github.com/Julianaguero/runthecode-ecommerce"
   },
   {
-    title: "Car Hub",
-    description:
-      "Developed a Next.js application, consuming data from two different APIs. It has features like integrated pagination, filtering, and search functionality.",
-    tags: ["Next.js", "TypeScript", "TailwindCSS"],
-    // imageUrl: carshowcaseImg,
-    url: "https://jaguero-carshowcase.netlify.app/"
+    title: "Timer",
+    year: "2024",
+    type: "Progressive Web App - PWA /",
+    stack: "STACK : HTML / CSS / Javascript / Lit Elements / Web Components ",
+    tailwindBg: "bg-pomodoro",
+    url: "https://pomodoro-jaguero.netlify.app/",
+    repo: "https://github.com/Julianaguero/pomodoro-timer-pwa"
   },
   {
-    title: "SocialApp",
-    description:
-      "A pinterest clone. I use Sanity.io as DB for user and pictures, login with Google OAuth 2.0. Fully functional.",
-    tags: ["Next.js", "Sanity.io", "TailwindCSS"],
-    // imageUrl: socialappImg,
-    url: "https://jaguero-socialapp.netlify.app/"
+    title: "Car hub",
+    year: "2023",
+    type: "Landing page /",
+    stack: "STACK: NEXT.JS / TYPESCRIPT / TAILWINDCSS",
+    tailwindBg: "bg-carhub",
+     url: "https://jaguero-carshowcase.netlify.app/",
+    repo: "https://github.com/Julianaguero/car-showcase-demo"
+  },
+  {
+    title: "Social App",
+    year: "2023",
+    type: "PINTEREST CLONE / ",
+    stack: "STACK: NEXT.JS / TYPESCRIPT / TAILWINDCSS / SANITY.IO",
+    tailwindBg: "bg-socialapp",
+    url: "https://jaguero-socialapp.netlify.app/",
+    repo: "https://github.com/Julianaguero/socialApp_pinterestClone"
+   
   },
 ] as const;
 

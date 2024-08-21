@@ -1,14 +1,13 @@
-import { motion } from "framer-motion";
 import { useState } from "react";
-import {ListedAttributes, ActiveText} from "../index";
+import { motion } from "framer-motion";
+import { ListedAttributes, ActiveText } from "../index";
 
 export default function About() {
-const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-const handleClick = () => {
-  setIsOpen(!isOpen)
-  console.log(isOpen)
-}
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <motion.section
@@ -18,10 +17,10 @@ const handleClick = () => {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <ActiveText isOpen={isOpen} handleClick={handleClick}/>
-      <ListedAttributes isOpen={isOpen}/>
+      <ActiveText isOpen={isOpen} handleClick={handleClick} />
+      <ListedAttributes isOpen={isOpen} />
       <motion.button
-        className={`self-end text-white text-[30px] mr-10 mb-10 cursor-pointer z-50 transition-all duration-150 ease ${isOpen ? "hidden" : ""}` }
+        className={`self-end text-white text-[30px] mr-10 mb-10 cursor-pointer z-50 transition-all duration-150 ease ${isOpen ? "hidden" : ""}`}
         initial={{ opacity: 0, y: 100 }}
         animate={isOpen ? { opacity: 0, y: 0 } : { opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}

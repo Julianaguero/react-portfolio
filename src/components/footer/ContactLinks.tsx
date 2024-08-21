@@ -1,3 +1,4 @@
+import CVFRONT from "../../assets/files/FRONT ES - CV_Julian_Aguero.pdf"
 
 export default function ContactLinks() {
   return (
@@ -9,7 +10,7 @@ export default function ContactLinks() {
           EMAIL ME
         </a>
         <a
-          href=""
+          href={CVFRONT}
           download
           className="font-small md:mr-40"
         >
