@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import { Home, Work, Contact, Resume } from "../pages";
 
-const basename = process.env.NODE_ENV === "production" ? "https://julianaguero.netlify.app" : "/";
+// const basename = process.env.NODE_ENV === "production" ? "https://julianaguero.netlify.app" : "/";
 
 export const router = createBrowserRouter([
     {
@@ -29,5 +29,5 @@ export const router = createBrowserRouter([
         element: <Contact />
     }
 ]
-, { basename }
+// , { basename }
 );
