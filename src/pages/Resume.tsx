@@ -2,8 +2,8 @@ import { ExperienceWrapper, PreFooter, ResumeIntro } from "../components";
 import { useSectionInView } from "../lib/hooks";
 
 export default function Resume() {
-  const { ref } = useSectionInView("Resume", 0.5);
-
+  const { ref } = useSectionInView("Resume", 0.25);
+ 
   return (
     <main
       ref={ref}
@@ -12,7 +12,7 @@ export default function Resume() {
     >
         <ResumeIntro />
         <ExperienceWrapper />
-        <PreFooter />
+        <PreFooter/>
     </main>
   );
 }

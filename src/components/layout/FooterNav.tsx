@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import { links } from "../../lib/data";
 import { useActiveSectionContext } from "../../hooks/useActiveSectionContext";
 
+
+
 export default function FooterNav() {
   const { activeSection, setActiveSection } = useActiveSectionContext();
 
@@ -9,11 +11,11 @@ export default function FooterNav() {
     <div className="bg-dark px-8 py-12 md:p-24 md:pl-10">
       <ul>
         {links.slice(1).map((link, index) => (
-          <li key={link.hash} className="flex items-start ">
+          <li key={"link"+index} className={`flex items-start `}>
             <NavLink
               to={link.hash}
-              className={`text-[clamp(50px,2.5rem,70px)] sm:font-big uppercase text-white font-neue font-medium  leading-none 
-               ${link.hover}  ${activeSection === link.name ? link.active : ""}`}
+              className={`text-[clamp(50px,2.5rem,70px)] sm:font-big uppercase font-neue font-medium  leading-none 
+             ${activeSection === link.name ? link.active : `${link.hover} text-white`}  `}
               onClick={() => {
                 setActiveSection(link.name);
               }}

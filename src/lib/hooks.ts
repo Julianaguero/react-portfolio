@@ -12,7 +12,7 @@ export function useSectionInView( sectionName: SectionName, threshold= 0.75 ) {
 
     useEffect(() => {
         if (inView) {
-            setActiveSection(sectionName);
+         setActiveSection(sectionName);
         }
     }, [inView, setActiveSection, sectionName]);
 

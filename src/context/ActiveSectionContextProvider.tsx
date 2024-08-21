@@ -18,8 +18,7 @@ export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home");
-  
- 
+  console.log(activeSection)
   
 
   return (

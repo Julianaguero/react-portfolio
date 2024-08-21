@@ -14,18 +14,18 @@ export const router = createBrowserRouter([
                 element: <Home />
             } ,
             {
-                path: "/work",
+                path: "work",
                 element: <Work />
             } ,
             {
-                path: "/resume",
+                path: "resume",
                 element: <Resume />
             } ,
          
         ]
     },
     {
-        path: "/contact",
+        path: "contact",
         element: <Contact />
     }
 ]
