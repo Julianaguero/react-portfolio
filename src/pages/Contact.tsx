@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FooterLinks, Header } from "../components";
-import CVFRONT from "../assets/files/FRONT ES - CV_Julian_Aguero.pdf";
+import CVFRONT from "../assets/files/FRONT_EN_-_CV_Julian_Aguero.pdf";
 import { colors, contactLinks } from "../lib/data";
 import { useSectionInView } from "../lib/hooks";
 import { Helmet } from "react-helmet-async";

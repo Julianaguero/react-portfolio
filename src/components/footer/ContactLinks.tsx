@@ -1,4 +1,4 @@
-import CVFRONT from "../../assets/files/FRONT ES - CV_Julian_Aguero.pdf"
+import CVFRONT from "../../assets/files/FRONT_EN_-_CV_Julian_Aguero.pdf"
 
 export default function ContactLinks() {
   return (
