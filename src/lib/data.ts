@@ -157,7 +157,7 @@ export const colors = [
 
 export const textToRender = [
   { text: "I'VE", hover: "hover:text-white" },
-  { text: "WORK", hover: "hover:text-white" },
+  { text: "WORKED", hover: "hover:text-white" },
   { text: "WITH", hover: "hover:text-white" },
   { text: "REACT", hover: "hover:text-green" },
   { text: "/", hover: "" },
